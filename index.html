@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AR Video</title>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+  <a-scene embedded arjs>
+    <!-- Маркер для QR-кода -->
+    <a-marker type="barcode" value="https://disk.yandex.ru/client/disk?source=main-loginmenu&idApp=client&dialog=slider&idDialog=%2Fdisk%2F%D0%A5%D0%BB%D0%B5%D0%B1%D0%BD%D1%8B%D0%B5%20%D0%BA%D1%80%D0%BE%D1%88%D0%BA%D0%B8.mp44">
+      <!-- Видео, которое будет воспроизводиться -->
+      <a-video src="https://disk.yandex.ru/client/disk?source=main-loginmenu&idApp=client&dialog=slider&idDialog=%2Fdisk%2F%D0%A5%D0%BB%D0%B5%D0%B1%D0%BD%D1%8B%D0%B5%20%D0%BA%D1%80%D0%BE%D1%88%D0%BA%D0%B8.mp44" width="2" height="1" position="0 0 0"></a-video>
+    </a-marker>
+    <a-entity camera></a-entity>
+  </a-scene>
+</body>
+</html>
